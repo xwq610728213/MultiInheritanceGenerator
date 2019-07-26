@@ -2,6 +2,7 @@ import java.io._
 import util.Random.nextInt
 
 object createMultiInheritance{
+  // Generate Tbox
   def creatOntology(depth: Int, max_branches: Int, max_inheritance: Int, writer: PrintWriter, list_nodes: List[Int], lastConcept: Int, list_multi: List[Int]) : (Int, List[Int]) = {
     /*
     if(depth == 0)
@@ -71,7 +72,7 @@ object createMultiInheritance{
 
   }
 
-
+  // Generate Abox
   def createFacts(writer: PrintWriter, concept_number: Int): Int ={
     var num = 0;
     var node = 0;
@@ -86,10 +87,6 @@ object createMultiInheritance{
       num += 1;
     }
     return num;
-  }
-
-  def createTriplePattern(instance_number: Int, node_number: Int): Unit ={
-    return;
   }
 
   val usage = "Usage: createMultiInheritance [--max-depth num] [--max-branches num] [--path string] [--max-inheritance num]"
