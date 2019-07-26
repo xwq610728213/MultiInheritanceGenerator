@@ -1,0 +1,1 @@
+# Multi_inheritance_generator
